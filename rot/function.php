@@ -68,7 +68,7 @@ function update($tabel,$keys,$values,$id,$conn){
     }
 
     for($i=0;$i<count($key);$i++){
-        $query = "UPDATE $tabel SET $key[$i]='$val[$i]  ' WHERE id='$id'";
+        $query = "UPDATE $tabel SET $key[$i]='$val[$i]' WHERE $id";
         $result = $conn->query($query);
         if(!$result){
             return false;

@@ -20,8 +20,8 @@ class TaskProject{
         tdstatus.innerHTML =`
         <select name="task_status[]" class="form-control custom-select">
         <option value="" selected>--Pilih--</option>
-        <option value="progres" selected>Progres</option>
-        <option value="done" selected>Done</option>
+        <option value="0" >Progres</option>
+        <option value="1" >Done</option>
         </select>`;
         tdoption.innerHTML = `<div class="btn-group btn-group-sm">
         <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i></a>
